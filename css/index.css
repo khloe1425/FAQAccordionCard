@@ -1,0 +1,166 @@
+body{
+	background-image: linear-gradient(0deg, hsl(240, 73%, 65%),  hsl(273, 75%, 66%) );
+	font-family: 'Kumbh Sans', sans-serif;
+	background-repeat: no-repeat;
+}
+
+.i-box{
+	position: absolute;
+    width: 14%;
+    right: 75.3%;
+    top: 23rem;
+    z-index: 1;
+}
+
+.content{
+	height: 550px;
+	width: 65% ;
+	background-color: #f8f9fa;
+	margin: 7rem auto;
+	margin-bottom: 12rem;
+	border-radius: 25px;
+	
+}
+
+.content-right{
+	padding: 5% 6%;
+}
+
+.content-left{
+	background-image: url(/image/bg-pattern-desktop.svg);
+	background-position: 100% -18rem;
+	background-repeat: no-repeat;
+	
+	
+}
+
+
+
+   .accordion {
+	background-color: #f8f9fa;
+	color: #444;
+	cursor: pointer;
+	padding: 18px;
+	width: 100%;
+	text-align: left;
+	outline: none;
+	font-size: 15px;
+	transition: 0.4s;
+	border-bottom: 1px solid gray;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+  }
+
+  .active, .accordion:hover {
+	background-color: #ccc;
+	color: orange;
+  }
+
+  .accordion:hover {
+	background-color: #ccc;
+	color: orange;
+  }
+  
+  .accordion:after {
+	content: url(/image/icon-arrow-down.svg);
+	color: #777;
+	font-weight: bold;
+	float: right;
+	margin-left: 5px;
+  }
+  
+  .active:after {
+	content: url(/image/icon-arrow-down.svg);
+	transform: rotate(180deg);
+
+  }
+  
+  .panel {
+	padding: 0 18px;
+	background-color: #f8f9fa;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+  }
+
+  @media screen and (min-width: 576px) {
+	  .content-left{
+		  display: flex;
+		  align-items: center;
+	  }
+	  .content-left .img-woment {
+			position: absolute;
+			top: 100px;
+			left: -9%;
+			width: 51%;
+	  }
+
+	  .content{
+		  position: relative;
+		  overflow: auto;
+	  }
+  }
+
+
+  @media screen and (max-width: 576px) {
+	.content{
+		width: 90% ;
+		margin: 10rem auto;
+		font-size: 12px;
+		height: 700px;
+		display: block !important;
+	}
+
+	.content-left .img-woment {
+		width: 65% !important;
+		margin-top: -30%;
+	}
+
+	.content-left{
+		background-image: url(/image/bg-pattern-mobile.svg);
+		background-position: top;
+		background-size:70%;
+		height: 150px;
+		
+	}
+
+	.content-right {
+		padding: 0 2rem;
+	}
+	
+	.content-right h1 {
+		text-align: center;
+	}
+	
+
+	.c-img{
+		display: flex;
+		justify-content: center;
+	}
+
+	.i-box{
+		display: none;
+	}
+
+	
+  }
+
+  @media screen and (max-width: 1258px) {
+	.i-box{
+		top: 20.5rem !important;
+	}
+}
+
+
+@media screen and (max-width: 930px) {
+	.i-box{
+		top: 19.5rem !important;
+	}
+}
+
+@media screen and (max-width: 930px) {
+	.i-box{
+		top: 18.3rem !important;
+	}
+}
